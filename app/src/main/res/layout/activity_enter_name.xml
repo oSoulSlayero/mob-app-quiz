@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterName">
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="285dp"
+        android:fontFamily="@font/gothic_a1_extrabold"
+        android:outlineProvider="bounds"
+        android:text="Enter Username"
+        android:textColor="#F48C2C"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/username"
+        android:layout_centerInParent="true"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Name"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName"
+        android:textColor="#F48C2C"
+        android:textColorHint="#FFC700"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Submit"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/nameInput"
+        android:backgroundTint="#FFC700"/>
+</RelativeLayout>
